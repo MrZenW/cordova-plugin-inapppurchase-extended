@@ -30,12 +30,13 @@ inAppPurchase.getProducts = (productIds) => {
         } else {
           const arr = res.products.map((val) => {
             return {
-              productId   : val.productId,
-              title       : val.title,
-              description : val.description,
-              priceAsDecimal : val.priceAsDecimal,
-              price       : val.price,
-              currency    : val.currency,
+              _libRepo      : 'https://github.com/MrZenW/cordova-plugin-inapppurchase-extended',
+              productId     : val.productId,
+              title         : val.title,
+              description   : val.description,
+              priceAsDecimal: val.priceAsDecimal,
+              price         : val.price,
+              currency      : val.currency,
             };
           });
           resolve(arr);
